@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.navigation_bar{
+    background-color: #660066;
+}
+.navigation_bar a{
+    text-decoration: none;
+    color: white;
+}
+
+.navigation_bar a:hover{
+    color: #ff99ff;
+}
+ 
+.logo-name{
+    color: white;
+    padding-top: 10px;
+    padding-left: 20px;
+    align-items: auto;
+    font-size: large;
+    font-weight: 100;
+    font-style: italic;
+    font-style: bold;
+}
+
+.menu ul{
+    align-items: center;
+    display: flex;
+    list-style: none;
+    justify-content: right;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-top: 30px;
+}
+
+.home-nav{
+    padding-right: 15px ;
+}
+.about-nav{
+    padding-right: 15px;
+}
+
+
+
+
+
