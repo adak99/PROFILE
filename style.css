@@ -4,67 +4,90 @@
     box-sizing: border-box;
 }
 
-.navigation_bar {
-    background-color: #660066;
+body {
+    font-family: Arial, sans-serif;
+}
+
+.back-ground-color{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(hsl(300, 100%, 20%),#9900cc);
+}
+
+.name{
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+nav {
+    background-color:linear-gradient(hsl(300, 100%, 20%),#9900cc);
+    color: #fff;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 10px 20px; /* Adjust padding for better spacing */
+    align-items: center;
+    padding: 1rem;
 }
 
-.logo-name {
-    color: white;
-    font-size: 24px; /* Increase font size for better readability */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
 }
 
-.menu ul {
-    list-style: none;
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+.nav-links {
     display: flex;
 }
 
-.menu li {
-    margin-right: 20px; /* Add some spacing between menu items */
+.nav-links li {
+    list-style: none;
+    margin-right: 1rem;
 }
 
-.navigation_bar a {
+.nav-links li a {
     text-decoration: none;
-    color: white;
-    transition: color 0.3s ease; /* Add smooth color transition on hover */
+    color: #fff;
+    transition: color 0.3s ease;
 }
 
-.navigation_bar a:hover {
-    color: #ff99ff;
+.nav-links li a:hover {
+    color:#9900cc;
 }
 
-/* Media queries for responsiveness */
-@media only screen and (max-width: 768px) {
-    .navigation_bar {
-        flex-direction: column; /* Stack items vertically on small screens */
-        align-items: flex-start; /* Align items to the start */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
     }
 
-    .menu ul {
-        flex-direction: row; /* Stack menu items vertically */
-        padding-top: 20px; /* Add padding for better spacing */
-        padding-bottom:0;
-
-       .home-nav{
-        padding-right: 10px;
-        align-items: left;
-       }
-       .about-nav{
-        padding-right: 10px;
-        align-items: center;
-       }
-       .services{
-        padding-right: 10px;
-        align-items: right;
-       }
-
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: linear-gradient(hsl(300, 100%, 20%),#9900cc);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
     }
 
-    .menu li {
-        margin-right: 0; /* Remove right margin to stack items without gaps */
-        margin-bottom: 5px; /* Add bottom margin for spacing between items */
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 0;
+    }
+
+    .nav-links li a {
+        padding: 1rem;
+        display: block;
+        border-bottom: 1px solid #cc00cc;
     }
 }
