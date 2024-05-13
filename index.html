@@ -14,6 +14,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap"
      rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..
+    700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Responsive Navigation</title>
 </head>
@@ -36,21 +44,44 @@
     <div class="image-text">
         <img class ="img" src="image.png"  >
         <div class="text">
-            <p><span class="first-text">Hi There,</span><br>I,m Soumyadip</p>
-            <p>I am a web devoloper</p>
-        </div>
+            <p><span class="first-text">Hi There,</span><br><span class="second-text">I,m Soumyadip</span></p>
+            <p class="third-text"><span>I am a web devoloper,Desinger</p>
+        </div>   
+        
+        <ul class="body-icons">
+            <a href="#"><i style="font-size:24px" class="fa">&#xf082;</i></a>
+            <a href="#"><i style="font-size:24px" class="fa">&#xf09b;</i></a>
+            <a href="#"><i style="font-size:24px" class="fa">&#xf16d;</i></a>
+            <a href="#"><i style="font-size:24px" class="fa">&#xf08c;</i></a>
+        </ul>
+    </div>
 
-       
+    <div class="bottom-bar">
+        <div class="bottom-bar-all">
+            <p><span class="bottom-name">Soumyadip Adak</span><br>
+            <span class="text-web-bottom">Web devoloper & Desinger</span></p>     
+            <ul class="bottom-ul">
+                <li class="abut-us"><a  href="#">About US</a></li>
+                <li class="products"><a  href="#">Products</a></li>
+                <li class="f-q"><a  href="#">F & Q</a></li>
+            </ul>
+        </div>
+        <ul class="bottom-icons">
+            <a href="#"><i style="font-size:24px" class="fa">&#xf082;</i></a>
+            <a href="#"><i style="font-size:24px" class="fa">&#xf09b;</i></a>
+            <a href="#"><i style="font-size:24px" class="fa">&#xf16d;</i></a>
+            <a href="#"><i style="font-size:24px" class="fa">&#xf08c;</i></a>
+        </ul>
+        <p class="bottom-text-copyright">@copyright</p>
 
     </div>
 
-
-    <!-- java Script -->
-    <script>
-        function toggleMenu() {
-            var navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('active');
-        }
-    </script>
+        <!-- java Script -->
+        <script>
+            function toggleMenu() {
+                var navLinks = document.querySelector('.nav-links');
+                navLinks.classList.toggle('active');
+            }
+        </script>
 </body>
 </html>
