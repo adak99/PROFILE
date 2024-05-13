@@ -8,20 +8,22 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.back-ground-color{
+ .back-ground-color{
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(hsl(300, 100%, 20%),#9900cc);
-}
+    background-color: #fff;
+} 
 
 .name{
-    font-size: 30px;
+    font-family: "Libre Baskerville", serif;
+    font-size: 40px;
     font-style: italic;
     font-weight: bold;
+    color: rgba(0,0,0);
 }
 
 nav {
-    background-color:linear-gradient(hsl(300, 100%, 20%),#9900cc);
+    background-color:white;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -52,14 +54,92 @@ nav {
 }
 
 .nav-links li a {
+    font-family: "Open Sans", sans-serif;
     text-decoration: none;
-    color: #fff;
+    color: rgba(0,0,0);
     transition: color 0.3s ease;
+    padding: 0 20px;
 }
 
 .nav-links li a:hover {
-    color:#9900cc;
+    color:#0000ff;
+    text-decoration: wavy;
 }
+
+.menu-toggle .bar {
+    background-color: black;
+}
+
+.image-text{
+    margin: auto;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.img{
+    max-width: 320px;
+    float: right;
+    align-items: center;
+    justify-content: center;
+    max-width: 320px;
+    height: 300 px;
+    width: 300px;
+    border-radius: 50%;  
+    padding-bottom: 30px;
+    padding-left: 30px;
+
+}
+
+.text{
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-left: 30px;
+
+    .first-text{
+        font-family: "Radio Canada Big", sans-serif;
+        font-size: 30px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
     .menu-toggle {
@@ -69,7 +149,7 @@ nav {
     .nav-links {
         display: none;
         flex-direction: column;
-        background-color: linear-gradient(hsl(300, 100%, 20%),#9900cc);
+        background-color: white;
         position: absolute;
         top: 60px;
         left: 0;
@@ -88,6 +168,6 @@ nav {
     .nav-links li a {
         padding: 1rem;
         display: block;
-        border-bottom: 1px solid #cc00cc;
+        border-bottom: 0.6px solid #0000ff;
     }
 }
