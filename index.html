@@ -26,7 +26,7 @@
     <title>Responsive Navigation</title>
 </head>
 <body class="back-ground-color">
-    <nav>
+    <nav class="navigation-bar">
         <div class="name">Soumyadip</div>
         <div class="menu-toggle" onclick="toggleMenu()">
             <div class="bar"></div>
@@ -56,26 +56,22 @@
         </ul>
     </div>
 
-    <div class="bottom-bar">
-        <div class="bottom-bar-all">
-            <p><span class="bottom-name">Soumyadip Adak</span><br>
-            <span class="text-web-bottom">Web devoloper & Desinger</span></p>     
-            <ul class="bottom-ul">
-                <li class="abut-us"><a  href="#">About US</a></li>
-                <li class="products"><a  href="#">Products</a></li>
-                <li class="f-q"><a  href="#">F & Q</a></li>
+
+    <nav class="bottom-bar">
+        <div class="bottom-bar-text">
+            <p class="bottom-name">Soumyadip Adak</p>
+            <p class="bottom-text-details">I'm a Web Developer and Web Designer</p>
+        </div>
+    
+        <div class="bottom-bar-contents">
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Products</a></li>
+                <li class="f-q"><a href="#">F & Q</a></li>
             </ul>
         </div>
-        <ul class="bottom-icons">
-            <a href="#"><i style="font-size:24px" class="fa">&#xf082;</i></a>
-            <a href="#"><i style="font-size:24px" class="fa">&#xf09b;</i></a>
-            <a href="#"><i style="font-size:24px" class="fa">&#xf16d;</i></a>
-            <a href="#"><i style="font-size:24px" class="fa">&#xf08c;</i></a>
-        </ul>
-        <p class="bottom-text-copyright">@copyright</p>
-
-    </div>
-
+    </nav>
+    
         <!-- java Script -->
         <script>
             function toggleMenu() {
